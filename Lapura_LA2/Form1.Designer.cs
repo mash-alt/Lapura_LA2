@@ -26,6 +26,7 @@
         private void InitializeComponent()
         {
             mainPanel = new Panel();
+            button1 = new Button();
             Result = new Label();
             Submit = new Button();
             LastName = new TextBox();
@@ -38,6 +39,7 @@
             // mainPanel
             // 
             mainPanel.BackColor = Color.FromArgb(240, 245, 249);
+            mainPanel.Controls.Add(button1);
             mainPanel.Controls.Add(Result);
             mainPanel.Controls.Add(Submit);
             mainPanel.Controls.Add(LastName);
@@ -50,6 +52,22 @@
             mainPanel.Padding = new Padding(40);
             mainPanel.Size = new Size(800, 450);
             mainPanel.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(0, 32, 63);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(431, 274);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 45);
+            button1.TabIndex = 6;
+            button1.Text = "Next";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Result
             // 
@@ -143,5 +161,6 @@
         private TextBox FirstName;
         private TextBox LastName;
         private Button Submit;
+        private Button button1;
     }
 }

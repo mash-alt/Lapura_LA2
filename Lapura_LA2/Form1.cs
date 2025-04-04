@@ -56,5 +56,12 @@ namespace Lapura_LA2
             FirstName.Clear();
             LastName.Clear();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+             DetailsPage detailsPage = new DetailsPage();
+            detailsPage.Show();
+        }
     }
 }
